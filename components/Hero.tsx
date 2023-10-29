@@ -159,27 +159,27 @@ const Hero = ({}: HeroProps) => {
           />
         </motion.div>
 
-        {/* <motion.div className="img-item img10" variants={robots}>
+        <motion.div className="img-item img10" variants={robots}>
           <Image
             src={Image10}
             className="hero-img"
-            width={300}
-            height={160}
+            width={237}
+            height={243}
             priority
             alt=""
           />
-        </motion.div> */}
+        </motion.div>
 
-        {/* <motion.div className="img-item img11" variants={robots}>
+        <motion.div className="img-item img11" variants={robots}>
           <Image
             src={Image11}
             className="hero-img"
-            width={300}
-            height={160}
+            width={237}
+            height={212}
             priority
             alt=""
           />
-        </motion.div> */}
+        </motion.div>
 
         <motion.div
           className="cta-container"
