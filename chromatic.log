@@ -8,38 +8,76 @@ Authenticated with Chromatic
     → Using project token '****************194d'
 Retrieving git information
 Retrieved git information
-    → Commit '2d30bfc' on branch 'main'; no ancestor found
+    → Commit '2a74964' on branch 'main'; found 1 parent build
 Collecting Storybook metadata
 Collected Storybook metadata
-    → ; using the unknown builder (0); supported addons found: Unknown
+    → Storybook 7.5.1 for React; using the @storybook/nextjs builder (7.5.1); supported addons found: Links, Essentials, Interactions
 Initializing build
 Initialized build
-    → Build 3 initialized
+    → Build 23 initialized
 Building your Storybook
-    → Running command: pnpm run build-storybook --output-dir /var/folders/r3/pnpvbp0j4dbgbfs5jmwmmqqm0000gn/T/chromatic--93676-H8pSdcMoVLIe
-The CLI tried to run your build-storybook script, but the command failed. This indicates a problem with your Storybook. Here's what to do:
+    → Running command: pnpm run build-storybook --output-dir /var/folders/r3/pnpvbp0j4dbgbfs5jmwmmqqm0000gn/T/chromatic--98704-AeThHTKdUVux
+Storybook built in 9 seconds
+    → View build log at /Users/canceydejean/Dropbox/Code/React/Component Projects/nft-robotos-next-14-storybook/build-storybook.log
+Publish your built Storybook
+    → Validating Storybook files
+Publishing your built Storybook
+    → Retrieving target location
+    → Starting publish
+    → [                    ] 1%
+    → [=                   ] 6%
+    → [==                  ] 11%
+    → [===                 ] 14%
+    → [=====               ] 26%
+    → [======              ] 28%
+    → [======              ] 30%
+    → [=======             ] 36%
+    → [========            ] 42%
+    → [=========           ] 47%
+    → [==========          ] 48%
+    → [==========          ] 49%
+    → [==========          ] 51%
+    → [==========          ] 52%
+    → [===========         ] 54%
+    → [===========         ] 56%
+    → [===========         ] 57%
+    → [============        ] 61%
+    → [=============       ] 64%
+    → [=============       ] 66%
+    → [===============     ] 73%
+    → [===============     ] 75%
+    → [===============     ] 76%
+    → [================    ] 80%
+    → [=================   ] 86%
+    → [==================  ] 89%
+    → [==================  ] 92%
+    → [=================== ] 95%
+    → [=================== ] 96%
+    → [=================== ] 97%
+    → [====================] 98%
+    → [====================] 100%
+Publish complete in 7 seconds
+    → View your Storybook at https://653dface1bb243f1ec6ba4f5-hapwkexkpx.chromatic.com
+Verifying your Storybook
+    → This may take a few minutes
+Started build 23
+    → View build details at https://www.chromatic.com/build?appId=653dface1bb243f1ec6ba4f5&number=23
+Running 8 tests
+    → This may take a few minutes
+ℹ Speed up Continuous Integration
+Your project is linked to GitHub so Chromatic will report results there.
+This means you can pass the --exit-once-uploaded flag to skip waiting for build results.
+Read more here: https://www.chromatic.com/docs/cli#chromatic-options
+    → [===                 ] 1/8  Button › Primary 
+    → [=====               ] 2/8  Button › Secondary 
+    → [========            ] 3/8  Button › Large 
+    → [==========          ] 4/8  Button › Small 
+    → [=============       ] 5/8  Header › Logged In 
+    → [===============     ] 6/8  Header › Logged Out 
+    → [==================  ] 7/8  Page › Logged Out 
+    → [====================] 8/8  Page › Logged In 
+✖ Found 8 visual changes: Review the changes at https://www.chromatic.com/build?appId=653dface1bb243f1ec6ba4f5&number=23
 
-- Check the Storybook build log printed below.
-- Run npm run build-storybook or yarn build-storybook yourself and make sure it outputs a valid Storybook by opening the generated index.html in your browser.
-- Review the build-storybook CLI options at https://storybook.js.org/docs/configurations/cli-options/#for-build-storybook
-
-Command failed with exit code 1: pnpm run build-storybook --output-dir /var/folders/r3/pnpvbp0j4dbgbfs5jmwmmqqm0000gn/T/chromatic--93676-H8pSdcMoVLIe
-
-ℹ Build command:
-pnpm run build-storybook --output-dir /var/folders/r3/pnpvbp0j4dbgbfs5jmwmmqqm0000gn/T/chromatic--93676-H8pSdcMoVLIe
-
-ℹ Runtime metadata:
-{
-  "nodePlatform": "darwin",
-  "nodeVersion": "18.17.0",
-  "packageManager": "pnpm",
-  "packageManagerVersion": "8.9.2"
-}
-
-ℹ Storybook build output:
-/Users/canceydejean/Dropbox/Code/React/Component Projects/nft-robotos-next-14-storybook/build-storybook.log
-
-> nft-robotos@0.1.0 build-storybook /Users/canceydejean/Dropbox/Code/React/Component Projects/nft-robotos-next-14-storybook
-> build-storybook "--output-dir" "/var/folders/r3/pnpvbp0j4dbgbfs5jmwmmqqm0000gn/T/chromatic--93676-H8pSdcMoVLIe"
-sh: build-storybook: command not found
- ELIFECYCLE  Command failed.
+ℹ For CI/CD use cases, this command failed with exit code 1
+Pass --exit-zero-on-changes to succeed this command regardless of changes.
+Pass --auto-accept-changes to succeed and automatically accept any changes.
