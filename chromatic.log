@@ -4,4 +4,42 @@ https://www.chromatic.com/docs/cli
 
 Authenticating with Chromatic
     → Connecting to https://index.chromatic.com
-    → No app with code '999871ea9ac194d' found
+Authenticated with Chromatic
+    → Using project token '****************194d'
+Retrieving git information
+Retrieved git information
+    → Commit '2d30bfc' on branch 'main'; no ancestor found
+Collecting Storybook metadata
+Collected Storybook metadata
+    → ; using the unknown builder (0); supported addons found: Unknown
+Initializing build
+Initialized build
+    → Build 3 initialized
+Building your Storybook
+    → Running command: pnpm run build-storybook --output-dir /var/folders/r3/pnpvbp0j4dbgbfs5jmwmmqqm0000gn/T/chromatic--93676-H8pSdcMoVLIe
+The CLI tried to run your build-storybook script, but the command failed. This indicates a problem with your Storybook. Here's what to do:
+
+- Check the Storybook build log printed below.
+- Run npm run build-storybook or yarn build-storybook yourself and make sure it outputs a valid Storybook by opening the generated index.html in your browser.
+- Review the build-storybook CLI options at https://storybook.js.org/docs/configurations/cli-options/#for-build-storybook
+
+Command failed with exit code 1: pnpm run build-storybook --output-dir /var/folders/r3/pnpvbp0j4dbgbfs5jmwmmqqm0000gn/T/chromatic--93676-H8pSdcMoVLIe
+
+ℹ Build command:
+pnpm run build-storybook --output-dir /var/folders/r3/pnpvbp0j4dbgbfs5jmwmmqqm0000gn/T/chromatic--93676-H8pSdcMoVLIe
+
+ℹ Runtime metadata:
+{
+  "nodePlatform": "darwin",
+  "nodeVersion": "18.17.0",
+  "packageManager": "pnpm",
+  "packageManagerVersion": "8.9.2"
+}
+
+ℹ Storybook build output:
+/Users/canceydejean/Dropbox/Code/React/Component Projects/nft-robotos-next-14-storybook/build-storybook.log
+
+> nft-robotos@0.1.0 build-storybook /Users/canceydejean/Dropbox/Code/React/Component Projects/nft-robotos-next-14-storybook
+> build-storybook "--output-dir" "/var/folders/r3/pnpvbp0j4dbgbfs5jmwmmqqm0000gn/T/chromatic--93676-H8pSdcMoVLIe"
+sh: build-storybook: command not found
+ ELIFECYCLE  Command failed.
