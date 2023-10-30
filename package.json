@@ -9,7 +9,6 @@
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "chromatic": "npx chromatic --project-token=chpt_999871ea9ac194d",
     "test-storybook": "test-storybook"
   },
   "dependencies": {
@@ -36,7 +35,6 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "axe-playwright": "^1.2.3",
-    "chromatic": "^7.5.4",
     "sass": "^1.69.5",
     "storybook": "^7.5.1",
     "typescript": "^5"
