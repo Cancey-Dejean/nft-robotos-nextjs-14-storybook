@@ -13,7 +13,7 @@ import {
   Image10,
   Image11,
 } from "./microComponents/images"
-import Button from "./microComponents/Button"
+import Button from "./microComponents/Button/Button"
 import Inventory from "./microComponents/Inventory"
 import Image from "next/image"
 
@@ -187,7 +187,7 @@ const Hero = ({}: HeroProps) => {
           initial="hidden"
           animate="show"
         >
-          <Button text="Mint Robotos" link="/" btnColor="mint" />
+          <Button text="Mint Robotos" btnColor="mint" linkUrl="/" />
 
           <Inventory inventoryBgColor="red" />
         </motion.div>

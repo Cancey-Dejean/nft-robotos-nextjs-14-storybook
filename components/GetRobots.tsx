@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { RobotHead } from "./microComponents/images"
-import Button from "./microComponents/Button"
+import Button from "./microComponents/Button/Button"
 import Inventory from "./microComponents/Inventory"
 
 const GetRobots = () => {
@@ -30,7 +30,7 @@ const GetRobots = () => {
               backpacks, arms, and colors. Get your own!
             </p>
 
-            <Button text="Mint Robotos" link="/" btnColor="pink" />
+            <Button text="Mint Robotos" linkUrl="/" btnColor="pink" />
 
             <Inventory inventoryBgColor="grey-bg" />
           </div>

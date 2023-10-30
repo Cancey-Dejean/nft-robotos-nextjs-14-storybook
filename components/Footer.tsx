@@ -1,4 +1,4 @@
-import Button from "./microComponents/Button"
+import Button from "./microComponents/Button/Button"
 
 const Footer = () => {
   return (
@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="domo-text">DOMO</div>
       <div className="domo-text purple">ARIGATO</div>
 
-      <Button text="Mint Robotos" link="/" btnColor="purple" />
+      <Button text="Mint Robotos" linkUrl="/" btnColor="purple" />
 
       <div className="follow">
         Follow Robotos on{" "}
