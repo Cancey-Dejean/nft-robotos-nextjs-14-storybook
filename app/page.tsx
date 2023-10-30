@@ -7,8 +7,8 @@ import Faq from "@/components/Faq"
 export default function Home() {
   return (
     <main>
-      <Hero />
-      <GetRobots />
+      <Hero btnText="Mint Robotos" showImages showInventoryCount />
+      <GetRobots robotHeadImg="/images/robot-head.png" />
       <Intermission />
       <Rarity />
       <Faq />
