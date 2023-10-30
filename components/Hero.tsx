@@ -14,8 +14,9 @@ import {
   Image11,
 } from "./microComponents/images"
 import Button from "./microComponents/Button/Button"
-import Inventory from "./microComponents/Inventory"
+
 import Image from "next/image"
+import Inventory from "./microComponents/Inventory/Inventory"
 
 type HeroProps = {}
 
@@ -189,7 +190,7 @@ const Hero = ({}: HeroProps) => {
         >
           <Button text="Mint Robotos" btnColor="mint" linkUrl="/" />
 
-          <Inventory inventoryBgColor="red" />
+          <Inventory bgColor="red" />
         </motion.div>
       </motion.div>
     </section>

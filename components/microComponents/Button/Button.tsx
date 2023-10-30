@@ -37,9 +37,14 @@ const Button = ({
   btnColor = "mint",
   ariaLabel = text,
   icon = null,
-  id = text,
   ...props
 }: ButtonProps) => {
+  const anchorId = text
+    .replace(" ", "-")
+    .replace("'", "")
+    .toLocaleLowerCase()
+    .trim()
+
   const iconContent = icon ? icon : null
   const buttonClasses = btnColor ? btnColor : ""
   const textContent = text !== "" ? text : null
@@ -58,7 +63,7 @@ const Button = ({
         </Link>
       ) : (
         <button
-          id={id}
+          id={anchorId}
           className={`btn-prime ${buttonClasses}`}
           aria-label={text}
           {...props}

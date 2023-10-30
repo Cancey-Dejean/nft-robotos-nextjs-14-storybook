@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { RobotHead } from "./microComponents/images"
 import Button from "./microComponents/Button/Button"
-import Inventory from "./microComponents/Inventory"
+import Inventory from "./microComponents/Inventory/Inventory"
 
 const GetRobots = () => {
   return (
@@ -32,7 +32,7 @@ const GetRobots = () => {
 
             <Button text="Mint Robotos" linkUrl="/" btnColor="pink" />
 
-            <Inventory inventoryBgColor="grey-bg" />
+            <Inventory bgColor="grey-bg" />
           </div>
         </div>
       </div>
