@@ -1,15 +1,17 @@
 import type { Meta, StoryObj } from "@storybook/react"
-import Inventory from "./"
+import Text from "."
+// import Text from "./"
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
   tags: ["autodocs"],
-  title: "Components/Inventory",
-  component: Inventory,
+  title: "Components/Text",
+  component: Text,
   args: {
-    invAvailable: 8208,
-    invTotal: 9999,
-    cryptoType: "ETH",
+    as: "h1",
+    size: "size-48",
+    className: "",
+    label: "Heading",
   },
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
@@ -19,13 +21,17 @@ const meta = {
 
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
-    textColor: {
+    size: {
       control: {
-        type: "color",
+        type: "select",
+        options: ["size-16", "size-28", "size-48", "size-display"],
       },
     },
+    children: {
+      control: false,
+    },
   },
-} satisfies Meta<typeof Inventory>
+} satisfies Meta<typeof Text>
 
 export default meta
 type Story = StoryObj<typeof meta>
@@ -33,12 +39,6 @@ type Story = StoryObj<typeof meta>
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Default: Story = {
   render: (args) => {
-    return <Inventory {...args} />
-  },
-}
-
-export const WithColor: Story = {
-  render: (args) => {
-    return <Inventory textColor="var(--white)" bgColor="var(--red)" {...args} />
+    return <Text {...args} />
   },
 }

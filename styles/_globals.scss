@@ -53,6 +53,22 @@
   box-sizing: border-box;
 }
 
+.size-16 {
+  font-size: var(--size-16);
+}
+
+.size-28 {
+  font-size: var(--size-28) !important;
+}
+
+.size-48 {
+  font-size: var(--size-48) !important;
+}
+
+.size-display {
+  font-size: var(--size-display) !important;
+}
+
 html {
   font-size: 10px;
   scroll-behavior: smooth;

@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { RobotHead } from "./microComponents/images"
 import Button from "./microComponents/Button/Button"
-import Inventory from "./microComponents/Inventory/Inventory"
+import Inventory from "./microComponents/Inventory"
 
 const GetRobots = () => {
   return (

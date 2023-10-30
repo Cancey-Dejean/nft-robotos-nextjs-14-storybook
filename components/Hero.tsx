@@ -16,7 +16,8 @@ import {
 import Button from "./microComponents/Button/Button"
 
 import Image from "next/image"
-import Inventory from "./microComponents/Inventory/Inventory"
+import Inventory from "./microComponents/Inventory"
+import Text from "./microComponents/Text"
 
 type HeroProps = {}
 
@@ -56,142 +57,144 @@ const Hero = ({}: HeroProps) => {
         animate="show"
       >
         <motion.div className="hero-text" initial="hidden" animate="show">
-          <motion.h1 className="hero-heading">Ro</motion.h1>
-          <motion.h1 className="hero-heading h2">Bot</motion.h1>
-          <motion.h1 className="hero-heading h3">os</motion.h1>
+          <motion.span className="hero-heading">Ro</motion.span>
+          <motion.span className="hero-heading h2">Bot</motion.span>
+          <motion.span className="hero-heading h3">os</motion.span>
         </motion.div>
 
-        <motion.div className="img-item img1" variants={robots}>
-          <Image
-            src={Image1}
-            width={262}
-            height={213}
-            className="hero-img"
-            priority
-            alt=""
-          />
-        </motion.div>
+        <div className="hero-images">
+          <motion.div className="img-item img1" variants={robots}>
+            <Image
+              src={Image1}
+              width={262}
+              height={213}
+              className="hero-img"
+              priority
+              alt=""
+            />
+          </motion.div>
 
-        <motion.div className="img-item img2" variants={robots}>
-          <Image
-            src={Image2}
-            className="hero-img"
-            width={300}
-            height={160}
-            priority
-            alt=""
-          />
-        </motion.div>
+          <motion.div className="img-item img2" variants={robots}>
+            <Image
+              src={Image2}
+              className="hero-img"
+              width={300}
+              height={160}
+              priority
+              alt=""
+            />
+          </motion.div>
 
-        <motion.div className="img-item img3" variants={robots}>
-          <Image
-            src={Image3}
-            className="hero-img"
-            width={250}
-            height={281}
-            priority
-            alt=""
-          />
-        </motion.div>
+          <motion.div className="img-item img3" variants={robots}>
+            <Image
+              src={Image3}
+              className="hero-img"
+              width={250}
+              height={281}
+              priority
+              alt=""
+            />
+          </motion.div>
 
-        <motion.div className="img-item img4" variants={robots}>
-          <Image
-            src={Image4}
-            className="hero-img"
-            width={247}
-            height={277}
-            priority
-            alt=""
-          />
-        </motion.div>
+          <motion.div className="img-item img4" variants={robots}>
+            <Image
+              src={Image4}
+              className="hero-img"
+              width={247}
+              height={277}
+              priority
+              alt=""
+            />
+          </motion.div>
 
-        <motion.div className="img-item img5" variants={robots}>
-          <Image
-            src={Image5}
-            className="hero-img"
-            width={236}
-            height={231}
-            priority
-            alt=""
-          />
-        </motion.div>
+          <motion.div className="img-item img5" variants={robots}>
+            <Image
+              src={Image5}
+              className="hero-img"
+              width={236}
+              height={231}
+              priority
+              alt=""
+            />
+          </motion.div>
 
-        <motion.div className="img-item img6" variants={robots}>
-          <Image
-            src={Image6}
-            className="hero-img"
-            width={295}
-            height={229}
-            priority
-            alt=""
-          />
-        </motion.div>
+          <motion.div className="img-item img6" variants={robots}>
+            <Image
+              src={Image6}
+              className="hero-img"
+              width={295}
+              height={229}
+              priority
+              alt=""
+            />
+          </motion.div>
 
-        <motion.div className="img-item img7" variants={robots}>
-          <Image
-            src={Image7}
-            className="hero-img"
-            width={270}
-            height={271}
-            priority
-            alt=""
-          />
-        </motion.div>
+          <motion.div className="img-item img7" variants={robots}>
+            <Image
+              src={Image7}
+              className="hero-img"
+              width={270}
+              height={271}
+              priority
+              alt=""
+            />
+          </motion.div>
 
-        <motion.div className="img-item img8" variants={robots}>
-          <Image
-            src={Image8}
-            className="hero-img"
-            width={300}
-            height={160}
-            priority
-            alt=""
-          />
-        </motion.div>
+          <motion.div className="img-item img8" variants={robots}>
+            <Image
+              src={Image8}
+              className="hero-img"
+              width={300}
+              height={160}
+              priority
+              alt=""
+            />
+          </motion.div>
 
-        <motion.div className="img-item img9" variants={robots}>
-          <Image
-            src={Image9}
-            className="hero-img"
-            width={246}
-            height={275}
-            priority
-            alt=""
-          />
-        </motion.div>
+          <motion.div className="img-item img9" variants={robots}>
+            <Image
+              src={Image9}
+              className="hero-img"
+              width={246}
+              height={275}
+              priority
+              alt=""
+            />
+          </motion.div>
 
-        <motion.div className="img-item img10" variants={robots}>
-          <Image
-            src={Image10}
-            className="hero-img"
-            width={237}
-            height={243}
-            priority
-            alt=""
-          />
-        </motion.div>
+          <motion.div className="img-item img10" variants={robots}>
+            <Image
+              src={Image10}
+              className="hero-img"
+              width={237}
+              height={243}
+              priority
+              alt=""
+            />
+          </motion.div>
 
-        <motion.div className="img-item img11" variants={robots}>
-          <Image
-            src={Image11}
-            className="hero-img"
-            width={237}
-            height={212}
-            priority
-            alt=""
-          />
-        </motion.div>
+          <motion.div className="img-item img11" variants={robots}>
+            <Image
+              src={Image11}
+              className="hero-img"
+              width={237}
+              height={212}
+              priority
+              alt=""
+            />
+          </motion.div>
 
-        <motion.div
-          className="cta-container"
-          variants={ctaContainer}
-          initial="hidden"
-          animate="show"
-        >
-          <Button text="Mint Robotos" btnColor="mint" linkUrl="/" />
+          <motion.div
+            className="cta-container"
+            variants={ctaContainer}
+            initial="hidden"
+            animate="show"
+          >
+            <Button text="Mint Robotos" btnColor="mint" linkUrl="/" />
 
-          <Inventory bgColor="red" />
-        </motion.div>
+            <Inventory bgColor="var(--red)" />
+          </motion.div>
+        </div>
       </motion.div>
     </section>
   )
