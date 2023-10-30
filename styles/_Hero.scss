@@ -25,7 +25,7 @@
     display: flex;
 
     .hero-heading {
-      font-size: 16vw;
+      font-size: var(--size-display);
       font-family: var(--heading-font);
       text-transform: uppercase;
       text-shadow: -17px 17px 0 var(--dark-grey);

@@ -1,73 +1,51 @@
-import { Meta, Typeset } from "@storybook/blocks";
+import { Meta, Typeset } from "@storybook/blocks"
 
 <Meta title="Design/Typography" />
 
 export const typography = {
   type: {
-    primary: '"Circular", "Helvetica Neue", Helvetica, Arial, sans-serif',
+    body: "Space Mono, monospace, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif",
+    heading: "Right Grotesk",
   },
   weight: {
     regular: "400",
-    semibold: "500",
-    bold: "700",
+    black: "800",
   },
   size: {
-    s1: 16,
-    m1: 24,
-    l1: 32,
-    l2: 40,
-    l3: 60,
+    body: 16,
+    l1: 28,
+    l2: 48,
+    display: 270,
   },
-};
+}
 
 export const SampleText =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 
 # Typography
 
-**Font:** Circular
+**Font:** Space Mono
 
 **Weights:** 400 (regular)
 
 <Typeset
-  fontSizes={[
-    Number(typography.size.s1),
-    Number(typography.size.m1),
-    Number(typography.size.l1),
-    Number(typography.size.l2),
-    Number(typography.size.l3),
-  ]}
+  fontSizes={[Number(typography.size.body)]}
   fontWeight={typography.weight.regular}
   sampleText={SampleText}
-  fontFamily={typography.type.primary}
+  fontFamily={typography.type.body}
 />
 
-**Weights:** 500 (medium)
+**Font:** Right Grotesk
+
+**Weights:** 800 (Black)
 
 <Typeset
   fontSizes={[
-    Number(typography.size.s1),
-    Number(typography.size.m1),
     Number(typography.size.l1),
     Number(typography.size.l2),
-    Number(typography.size.l3),
+    Number(typography.size.display),
   ]}
-  fontWeight={typography.weight.semibold}
+  fontWeight={typography.weight.black}
   sampleText={SampleText}
-  fontFamily={typography.type.primary}
-/>
-
-**Weights:** 700 (bold)
-
-<Typeset
-  fontSizes={[
-    Number(typography.size.s1),
-    Number(typography.size.m1),
-    Number(typography.size.l1),
-    Number(typography.size.l2),
-    Number(typography.size.l3),
-  ]}
-  fontWeight={typography.weight.bold}
-  sampleText={SampleText}
-  fontFamily={typography.type.primary}
+  fontFamily={typography.type.heading}
 />

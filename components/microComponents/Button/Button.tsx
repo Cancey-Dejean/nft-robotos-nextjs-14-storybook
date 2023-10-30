@@ -3,26 +3,45 @@ import { type } from "os"
 import { AnchorHTMLAttributes, ButtonHTMLAttributes } from "react"
 
 export type ButtonProps = {
+  /**
+   * Description goes here
+   */
   id?: string
+  /**
+   * Description goes here
+   */
   text: string
+  /**
+   * Description goes here
+   */
   linkUrl?: string
-  btnColor?: string
+  /**
+   * Description goes here
+   */
+  btnColor?: "mint" | "pink" | "purple"
+
+  /**
+   * Description goes here
+   */
   icon?: React.ReactNode
+  /**
+   * Description goes here
+   */
   ariaLabel?: string
 } & AnchorHTMLAttributes<HTMLAnchorElement> &
   ButtonHTMLAttributes<HTMLButtonElement>
 
 const Button = ({
-  id,
   text = "Button",
   linkUrl = "",
-  btnColor,
+  btnColor = "mint",
   ariaLabel = text,
   icon = null,
+  id = text,
   ...props
 }: ButtonProps) => {
   const iconContent = icon ? icon : null
-  const buttonClasses = btnColor !== "" ? btnColor : null
+  const buttonClasses = btnColor ? btnColor : ""
   const textContent = text !== "" ? text : null
 
   return (

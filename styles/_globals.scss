@@ -42,6 +42,11 @@
   --heading-font: "Right Grotesk";
 
   --transition: all 0.3s ease-in-out;
+
+  --size-16: 1.6rem;
+  --size-28: 2.8rem;
+  --size-48: 4.8rem;
+  --size-display: 27rem;
 }
 
 * {
@@ -62,7 +67,7 @@ body {
 
 body {
   font-family: var(--body-font);
-  font-size: 1.6rem;
+  font-size: var(--size-16);
   line-height: 2.4rem;
   height: 100vh;
   display: flex;
@@ -80,6 +85,7 @@ a {
 }
 
 p {
+  font-size: var(--size-16);
   &:not(:last-child) {
     margin-bottom: 10px;
   }
@@ -116,7 +122,7 @@ strong {
 
 .section-title {
   font-family: var(--heading-font);
-  font-size: 4.8rem;
+  font-size: var(--size-48);
   line-height: 5.7rem;
   font-weight: 700;
   letter-spacing: 0.04em;
