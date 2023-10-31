@@ -5,11 +5,11 @@ export type StatRowListItem = {
 }
 
 export type StatRowColumn = {
-  title?: string
   list?: StatRowListItem[]
 }
 
 export type StatRowProps = {
+  title?: string
   columns?: StatRowColumn[]
 }
 
