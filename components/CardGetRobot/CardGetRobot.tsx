@@ -4,10 +4,14 @@ import Inventory from "../microComponents/Inventory"
 
 type CardGetRobotProps = {
   robotHeadImg?: string
+  title: string
+  children: React.ReactNode
 }
 
 const CardGetRobot = ({
   robotHeadImg = "http://dummyimage.com/190.png/eb0d18/ffffff",
+  title = "Title",
+  children,
 }: CardGetRobotProps) => {
   return (
     <div className="get-robot-card">
@@ -23,17 +27,9 @@ const CardGetRobot = ({
           />
         </div>
 
-        <h3 className="section-title">GET YOUR ROBOTOS</h3>
+        <h3 className="section-title">{title}</h3>
 
-        <p>
-          Robotos is a collection of droid characters designed by{" "}
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <strong> Pablo Stanley</strong>
-          </a>{" "}
-          and minted as NFTs. They are constructed from various metal outfits,
-          tin faces, digital accessories, top pieces, faces, backpacks, arms,
-          and colors. Get your own!
-        </p>
+        {children}
 
         <Button text="Mint Robotos" linkUrl="/" btnColor="pink" />
 
