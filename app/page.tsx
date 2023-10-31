@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main>
       <Hero btnText="Mint Robotos" showImages showInventoryCount />
-      <GetRobots robotHeadImg="/images/robot-head.png" />
+      <GetRobots />
       <Intermission />
       <Rarity
         title="Rarity"

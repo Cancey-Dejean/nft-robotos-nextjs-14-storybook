@@ -1,39 +1,53 @@
 import Image from "next/image"
-import Button from "../microComponents/Button/Button"
+import Button, { ButtonProps } from "../microComponents/Button/Button"
 import Inventory from "../microComponents/Inventory"
 
 type CardGetRobotProps = {
   robotHeadImg?: string
   title: string
   children: React.ReactNode
+  showInventoryCount?: boolean
+  showHeadImg?: boolean
+  linkUrl?: ButtonProps["linkUrl"]
+  btnText?: ButtonProps["text"]
+  btnColor?: ButtonProps["btnColor"]
 }
 
 const CardGetRobot = ({
+  showHeadImg = true,
   robotHeadImg = "http://dummyimage.com/190.png/eb0d18/ffffff",
   title = "Title",
   children,
+  showInventoryCount = true,
+  btnColor = "pink",
+  btnText = "Button",
+  linkUrl = "#",
 }: CardGetRobotProps) => {
   return (
     <div className="get-robot-card">
       <div className="get-robot-card-head">
-        <div className="get-robot-card-head-img">
-          <Image
-            src={robotHeadImg}
-            className="robot-head"
-            loading="lazy"
-            alt=""
-            width={190}
-            height={190}
-          />
-        </div>
+        {showHeadImg && (
+          <div className="get-robot-card-head-img">
+            <Image
+              src={robotHeadImg}
+              className="robot-head"
+              loading="lazy"
+              alt=""
+              width={190}
+              height={190}
+            />
+          </div>
+        )}
 
-        <h3 className="section-title">{title}</h3>
+        {title !== "" && <h3 className="section-title">{title}</h3>}
 
         {children}
 
-        <Button text="Mint Robotos" linkUrl="/" btnColor="pink" />
+        {btnText !== "" && (
+          <Button text={btnText} linkUrl={linkUrl} btnColor={btnColor} />
+        )}
 
-        <Inventory bgColor="grey-bg" />
+        {showInventoryCount && <Inventory bgColor="grey-bg" />}
       </div>
     </div>
   )

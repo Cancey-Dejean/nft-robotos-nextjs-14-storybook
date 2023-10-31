@@ -29,6 +29,8 @@
 
     .img-single {
       max-width: 160px;
+      width: 100%;
+      height: auto;
       transform: rotate(-10deg);
 
       &._1 {
@@ -45,7 +47,7 @@
     }
 
     &.top {
-      top: -24px;
+      top: -10px;
       left: 50%;
       transform: translateX(-50%);
       width: 68%;

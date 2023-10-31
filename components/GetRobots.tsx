@@ -1,16 +1,15 @@
 import CardGetRobot from "./CardGetRobot/CardGetRobot"
 
-export type GetRobotsProps = {
-  robotHeadImg?: string
-}
-
-const GetRobots = ({
-  robotHeadImg = "http://dummyimage.com/190.png/eb0d18/ffffff",
-}: GetRobotsProps) => {
+const GetRobots = () => {
   return (
     <div className="get-robots">
       <div className="container">
-        <CardGetRobot robotHeadImg={robotHeadImg} title="GET YOUR ROBOTOS">
+        <CardGetRobot
+          robotHeadImg="/images/robot-head.png"
+          title="GET YOUR ROBOTOS"
+          btnText="Mint Robotos"
+          showInventoryCount
+        >
           <p>
             Robotos is a collection of droid characters designed by{" "}
             <a href="#" target="_blank" rel="noopener noreferrer">

@@ -17,6 +17,9 @@ dependencies:
   '@storybook/addon-storysource':
     specifier: ^7.5.2
     version: 7.5.2(@types/react-dom@18.2.14)(@types/react@18.2.33)(react-dom@18.2.0)(react@18.2.0)
+  '@whitespace/storybook-addon-html':
+    specifier: ^5.1.6
+    version: 5.1.6(@storybook/addons@7.5.2)(@storybook/api@7.5.2)(@storybook/components@7.5.2)(@storybook/core-events@7.5.2)(@storybook/theming@7.5.2)(prettier@2.8.8)(react-dom@18.2.0)(react-syntax-highlighter@15.5.0)(react@18.2.0)
   framer-motion:
     specifier: ^10.16.4
     version: 10.16.4(react-dom@18.2.0)(react@18.2.0)
@@ -3291,6 +3294,23 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
+  /@storybook/api@7.5.2(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-IaA0HDColrLw5k+i1nE4eYHvGychpXW21HpIBvJWCIh2Rv+War+Pr5uMhGDeAj0/xX1SrRiFPVhhKjDZdzHaSQ==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+    peerDependenciesMeta:
+      react:
+        optional: true
+      react-dom:
+        optional: true
+    dependencies:
+      '@storybook/client-logger': 7.5.2
+      '@storybook/manager-api': 7.5.2(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
   /@storybook/blocks@7.5.2(@types/react-dom@18.2.14)(@types/react@18.2.33)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-Tf6XE/YcnWQVBJRcJWJzhkahjSymv6QZuxMAiKFD8v48QRJ8kTxz1tBN9676Ux+l1WwtVWxwvd/0kRKKxE70wQ==}
     peerDependencies:
@@ -4583,6 +4603,35 @@ packages:
       '@webassemblyjs/ast': 1.11.6
       '@xtuc/long': 4.2.2
     dev: true
+
+  /@whitespace/storybook-addon-html@5.1.6(@storybook/addons@7.5.2)(@storybook/api@7.5.2)(@storybook/components@7.5.2)(@storybook/core-events@7.5.2)(@storybook/theming@7.5.2)(prettier@2.8.8)(react-dom@18.2.0)(react-syntax-highlighter@15.5.0)(react@18.2.0):
+    resolution: {integrity: sha512-NWO8nsWScMZ6hdn5Br0htTP2qMDnvA22xy06i1EUB4f62jzqLGMy5WLEYK/A21QeikBY4mapeqoAg8KtE4dIUg==}
+    peerDependencies:
+      '@storybook/addons': ^6.5.8 || ^7.0.12
+      '@storybook/api': ^6.5.8 || ^7.0.12
+      '@storybook/components': ^6.5.8 || ^7.0.12
+      '@storybook/core-events': ^6.5.8 || ^7.0.12
+      '@storybook/theming': ^6.5.8 || ^7.0.12
+      prettier: ^2.0.0
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react-syntax-highlighter: ^15.0.0
+    peerDependenciesMeta:
+      react:
+        optional: true
+      react-dom:
+        optional: true
+    dependencies:
+      '@storybook/addons': 7.5.2(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/api': 7.5.2(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/components': 7.5.2(@types/react-dom@18.2.14)(@types/react@18.2.33)(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/core-events': 7.5.2
+      '@storybook/theming': 7.5.2(react-dom@18.2.0)(react@18.2.0)
+      prettier: 2.8.8
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      react-syntax-highlighter: 15.5.0(react@18.2.0)
+    dev: false
 
   /@xtuc/ieee754@1.2.0:
     resolution: {integrity: sha512-DX8nKgqcGwsc0eJSqYt5lwP4DH5FlHnmuWWBRy7X0NcaGR0ZtuyeESgMwTYVEtxmsNGY+qit4QYT/MIYTOTPeA==}

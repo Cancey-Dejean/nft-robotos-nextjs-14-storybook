@@ -16,7 +16,6 @@ const Nav = () => {
   // Change Nav background color on scroll
   const changeNavbarColor = () => {
     if (window.scrollY >= 80) {
-      console.log("Scolled")
       setBgColorChange(true)
     } else {
       setBgColorChange(false)
