@@ -52,11 +52,15 @@
     }
   }
 
-  .type-img {
-    flex: 1;
+  .types-area {
     display: flex;
-    align-items: center;
-    // justify-content: center;
+    flex-direction: column;
+    .type-img {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }
 
