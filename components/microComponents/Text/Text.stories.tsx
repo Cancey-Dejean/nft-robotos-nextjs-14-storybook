@@ -12,6 +12,7 @@ const meta = {
     size: "size-48",
     className: "",
     label: "Heading",
+    children: "Heading",
   },
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
@@ -21,6 +22,12 @@ const meta = {
 
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
+    as: {
+      control: {
+        type: "select",
+        options: ["h1", "h2", "h3", "h4", "h5", "h6", "p"],
+      },
+    },
     size: {
       control: {
         type: "select",
