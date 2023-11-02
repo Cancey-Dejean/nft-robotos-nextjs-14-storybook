@@ -1,11 +1,13 @@
 import Card from "./Card/"
+import Text from "./microComponents/Text"
 
 const YourStuffHero = () => {
   return (
     <div className="hero-ys">
       <div className="page-container">
         <div className="page-header">
-          <h1 className="section-title">Your Stuff</h1>
+          {/* <h1 className="section-title"></h1> */}
+          <Text as="h1">Your Stuff</Text>
 
           <p>
             Here's a list of all robotos you own. Click to see the different

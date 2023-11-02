@@ -6,7 +6,7 @@ export type TextProps = {
   /**
    * Description goes here
    */
-  size: "size-16" | "size-28" | "size-48" | "size-display"
+  size?: "size-16" | "size-28" | "size-48" | "size-display"
   /**
    * Description goes here
    */
@@ -23,7 +23,7 @@ export type TextProps = {
 
 const Text = ({
   as: Element = "h1",
-  size = "size-48",
+  size,
   label = "Heading",
   children,
   className = "",
