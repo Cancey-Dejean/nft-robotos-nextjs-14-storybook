@@ -49,6 +49,9 @@ devDependencies:
   '@storybook/blocks':
     specifier: ^7.5.1
     version: 7.5.2(@types/react-dom@18.2.14)(@types/react@18.2.33)(react-dom@18.2.0)(react@18.2.0)
+  '@storybook/manager-api':
+    specifier: ^7.5.2
+    version: 7.5.2(react-dom@18.2.0)(react@18.2.0)
   '@storybook/nextjs':
     specifier: ^7.5.1
     version: 7.5.2(@swc/core@1.3.95)(@types/react-dom@18.2.14)(@types/react@18.2.33)(esbuild@0.18.20)(next@14.0.0)(react-dom@18.2.0)(react@18.2.0)(sass@1.69.5)(typescript@5.2.2)(webpack@5.89.0)
@@ -61,6 +64,9 @@ devDependencies:
   '@storybook/testing-library':
     specifier: ^0.2.2
     version: 0.2.2
+  '@storybook/theming':
+    specifier: ^7.5.2
+    version: 7.5.2(react-dom@18.2.0)(react@18.2.0)
   '@types/node':
     specifier: ^20
     version: 20.8.9
