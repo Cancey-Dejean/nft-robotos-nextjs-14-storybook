@@ -3,8 +3,8 @@ import CardGetRobot from "./CardGetRobot"
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
-  tags: ["autodocs"],
-  title: "Components/CardGetRobot",
+  // tags: ["autodocs"],
+  title: "Components/Cards/CardGetRobot",
   component: CardGetRobot,
   args: {
     showHeadImg: true,

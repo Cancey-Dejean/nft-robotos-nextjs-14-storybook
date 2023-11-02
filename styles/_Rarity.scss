@@ -23,33 +23,11 @@
     grid-template-columns: 1fr 1fr;
     gap: 24px;
     margin-top: 20px;
-
-    .rarity-list {
-      display: flex;
-      flex-direction: column;
-    }
   }
 
   .rarity-title {
     font-family: var(--heading-font);
     margin-bottom: 10px;
-  }
-
-  .rarity-row {
-    margin: 8px 0;
-    padding: 8px;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-
-    .rarity-number {
-      font-weight: 700;
-      width: 50%;
-    }
-
-    &:nth-child(even) {
-      background-color: var(--baby-blue);
-    }
   }
 
   .types-area {
@@ -60,6 +38,29 @@
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+  }
+}
+
+.rarity-list {
+  display: flex;
+  flex-direction: column;
+
+  .rarity-row {
+    margin: 8px 0;
+    padding: 8px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .rarity-number {
+      font-weight: 700;
+      width: 50%;
+    }
+
+    &:nth-child(even) {
+      background-color: var(--baby-blue);
     }
   }
 }

@@ -1,4 +1,4 @@
-import Card from "./microComponents/Card"
+import Card from "./Card/"
 
 const YourStuffHero = () => {
   return (

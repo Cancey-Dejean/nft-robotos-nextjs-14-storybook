@@ -1,4 +1,5 @@
-import Button from "./microComponents/Button/Button"
+import Link from "next/link"
+import Button from "../microComponents/Button/Button"
 
 const Footer = () => {
   return (
@@ -10,21 +11,17 @@ const Footer = () => {
 
       <div className="follow">
         Follow Robotos on{" "}
-        <a
-          href="https://twitter.com/robotosnft"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <Link href="#">
           <strong>Twitter</strong>
-        </a>{" "}
+        </Link>{" "}
         or{" "}
-        <a href="#" target="_blank" rel="noopener noreferrer">
+        <Link href="#">
           <strong>Discord</strong>
-        </a>{" "}
+        </Link>{" "}
         <br />
-        <a href="#" target="_blank" rel="noopener noreferrer">
+        <Link href="#">
           <strong>Smart Contract</strong>
-        </a>
+        </Link>
       </div>
     </footer>
   )

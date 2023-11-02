@@ -1,7 +1,8 @@
 "use client"
 import { useState } from "react"
 import Image from "next/image"
-import { Logo } from "./microComponents/images"
+import { Logo } from "../microComponents/images"
+import Link from "next/link"
 
 const links = [
   { name: "Your Stuff", link: "/your-stuff", id: 1 },
@@ -35,7 +36,7 @@ const Nav = () => {
     <nav className={bgColorChange ? "nav colorChange" : "nav"}>
       <div className="container">
         <div className="menu">
-          <a href="/" className="brand">
+          <Link href="/" className="brand">
             <Image
               src={Logo}
               width={28}
@@ -44,35 +45,35 @@ const Nav = () => {
               alt="Logo"
             />
             <div className="logo-text">Robotos</div>
-          </a>
+          </Link>
 
           <ul className="menu-list desktop-nav">
             {links.map(({ name, link, id }) => (
               <li className="menu-list-item" key={id}>
-                <a href={link} className="menu-link">
+                <Link href={link} className="menu-link">
                   {name}
-                </a>
+                </Link>
               </li>
             ))}
             <li className="menu-list-item">
-              <a href="#" className="menu-link nav-cta">
+              <Link href="#" className="menu-link nav-cta">
                 Connect
-              </a>
+              </Link>
             </li>
           </ul>
 
           <ul className="menu-list mobile-nav">
             {links.map(({ name, link, id }) => (
               <li className="menu-list-item" key={id}>
-                <a href={link} className="menu-link" onClick={sayHello}>
+                <Link href={link} className="menu-link" onClick={sayHello}>
                   {name}
-                </a>
+                </Link>
               </li>
             ))}
             <li className="menu-list-item">
-              <a href="#" className="menu-link nav-cta">
+              <Link href="#" className="menu-link nav-cta">
                 Connect
-              </a>
+              </Link>
             </li>
           </ul>
 

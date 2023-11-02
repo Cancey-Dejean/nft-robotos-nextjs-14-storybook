@@ -10,10 +10,10 @@ type FaqQuestionProps = {
 }
 
 const FaqQuestion = ({
-  imgAlt,
-  imgHeight,
-  imgWidth,
-  imgSrc,
+  imgAlt = "",
+  imgHeight = 57,
+  imgWidth = 90,
+  imgSrc = "http://dummyimage.com/.png/eb0d18/ffffff",
   question = "Question?",
   children = "Answer goes here",
 }: FaqQuestionProps) => {
@@ -28,7 +28,7 @@ const FaqQuestion = ({
           alt={imgAlt}
         />
       </div>
-      <div className="faq-question-title">{question}</div>
+      <h3 className="faq-question-title size-28">{question}</h3>
       <div className="faq-question-body">{children}</div>
     </div>
   )
